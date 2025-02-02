@@ -1,0 +1,142 @@
+/* Global styles*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arca Bold", sans-serif;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+
+}
+
+/* Color Variables */
+:root {
+    --bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-primary: RGB(140, 198, 62);
+    --bs-secondary: #e40076;
+    --bs-cyan: #0dcaf0;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+
+    --bs-gray-100: #f8f9fa;
+    --bs-gray-200: #e9ecef;
+    --bs-gray-300: #dee2e6;
+    --bs-gray-400: #ced4da;
+    --bs-gray-500: #adb5bd;
+    --bs-gray-600: #6c757d;
+    --bs-gray-700: #495057;
+    --bs-gray-800: #343a40;
+    --bs-gray-900: #212529;
+
+    --bs-white: #fff;
+    --bs-black: #000;
+
+    --bs-body-color: var(--bs-gray-900);
+    --bs-body-bg: var(--bs-white);
+    --bs-border-color: var(--bs-gray-300);
+}
+
+.btn{
+    display: inline-block;
+    background-color: var(--bs-secondary);
+    color: var(--bs-white);
+    border-radius: 26px;
+    padding: 6px 40px;
+    line-height: 1.5;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    
+
+}
+
+/* Header */
+.header {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: var(--bs-white);
+    color: var(--bs-gray-800);
+    background-color: var(--bs-gray-200);
+}
+
+
+.nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+.nav ul li a {
+    color: var(--bs-gray-800);
+    text-decoration: underline;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration-color: transparent;
+    text-underline-offset: 8px;
+    text-decoration-thickness: 4px;
+    transition: text-decoration-color 0.3s ease, color 0.3s ease;
+}
+
+.nav ul li a:hover {
+    color: var(--bs-pink);
+    text-decoration-color: var(--bs-primary);
+}
+.mobile_links{
+    display: none;
+  
+}
+/* Home Hero Slider */
+.home_hero_slider {
+    height: 450px;
+    width: 100%;
+    background-color: var(--bs-gray);
+
+}
+/* Services Section */
+
+.services_section {
+    height: 200px;
+    width: 100%;
+    background-color: var(--bs-gray-300);
+
+}
+/* Bundles Section*/
+
+.bundles_section {
+    height: 400px;
+    width: 100%;
+    background-color: var(--bs-gray-500);
+
+}
+
+@media (max-width: 992px) {
+
+    .nav ul{
+        display: none;
+    }
+    .mobile_links img{
+        height: 100%;
+        width: 100%;
+    }
+    .mobile_links{
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        height: 25px;
+    }
+}
