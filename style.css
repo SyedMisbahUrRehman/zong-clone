@@ -69,10 +69,7 @@
     text-underline-offset: 8px;
     text-decoration-thickness: 4px;
     transition: text-decoration-color 0.3s ease, color 0.3s ease;
-
-
 }
-
 .nav ul li a:hover {
     color: var(--bs-pink);
     text-decoration-color: var(--bs-primary);
