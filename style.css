@@ -68,6 +68,7 @@
     color: var(--bs-gray-800);
     text-decoration: underline;
     font-size: 13px;
+    font-weight: 600;
     text-decoration-color: transparent;
     text-underline-offset: 8px;
     text-decoration-thickness: 4px;
