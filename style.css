@@ -6,6 +6,7 @@
     font-family: "Arca Bold", sans-serif;
     list-style: none;
     text-decoration: none;
+    border: none;
 
 }
 
@@ -21,6 +22,7 @@
     --bs-green: #198754;
     --bs-teal: #20c997;
     --bs-primary: RGB(140, 198, 62);
+    --bs-secondary: #e40076;
     --bs-cyan: #0dcaf0;
     --bs-white: #fff;
     --bs-gray: #6c757d;
@@ -44,6 +46,20 @@
     --bs-border-color: var(--bs-gray-300);
 }
 
+.btn{
+    display: inline-block;
+    background-color: var(--bs-secondary);
+    color: var(--bs-white);
+    border-radius: 26px;
+    padding: 6px 40px;
+    line-height: 1.5;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    
+
+}
 
 /* Header */
 .header {
