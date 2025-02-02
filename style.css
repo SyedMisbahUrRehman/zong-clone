@@ -46,6 +46,7 @@
     --bs-border-color: var(--bs-gray-300);
 }
 
+/* Reusable btn */
 .btn{
     display: inline-block;
     background-color: var(--bs-secondary);
@@ -92,12 +93,15 @@
 }
 
 .nav ul li a:hover {
-    color: var(--bs-pink);
+    color: var(--bs-secondary);
     text-decoration-color: var(--bs-primary);
 }
 .mobile_links{
     display: none;
-  
+}
+.mobile_links img{
+    height: 100%;
+    width: 100%;
 }
 /* Home Hero Slider */
 .home_hero_slider {
@@ -128,10 +132,7 @@
     .nav ul{
         display: none;
     }
-    .mobile_links img{
-        height: 100%;
-        width: 100%;
-    }
+
     .mobile_links{
         display: flex;
         gap: 20px;
