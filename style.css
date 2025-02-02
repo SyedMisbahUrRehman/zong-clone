@@ -20,7 +20,7 @@
     --bs-yellow: #ffc107;
     --bs-green: #198754;
     --bs-teal: #20c997;
-    --bs-primary :RGB(140, 198, 62);
+    --bs-primary: RGB(140, 198, 62);
     --bs-cyan: #0dcaf0;
     --bs-white: #fff;
     --bs-gray: #6c757d;
@@ -57,39 +57,54 @@
     color: var(--bs-gray-800);
     background-color: var(--bs-gray-200);
 }
+
 .nav ul {
     display: flex;
     gap: 20px;
 }
+
 .nav ul li a {
     color: var(--bs-gray-800);
     text-decoration: underline;
     font-size: 13px;
-    text-decoration-color: transparent; 
+    text-decoration-color: transparent;
     text-underline-offset: 8px;
     text-decoration-thickness: 4px;
     transition: text-decoration-color 0.3s ease, color 0.3s ease;
 }
+
 .nav ul li a:hover {
     color: var(--bs-pink);
     text-decoration-color: var(--bs-primary);
 }
+
 /* Home Hero Slider */
-.home_hero_slider{
+.home_hero_slider {
     height: 450px;
     width: 100%;
     background-color: var(--bs-gray);
 
 }
-.services_section{
+/* Services Section */
+
+.services_section {
     height: 200px;
     width: 100%;
     background-color: var(--bs-gray-300);
 
 }
-.bundles_section{
+/* Bundles Section*/
+
+.bundles_section {
     height: 400px;
     width: 100%;
     background-color: var(--bs-gray-500);
 
+}
+
+@media (max-width: 992px) {
+
+    .nav {
+        display: none;
+    }
 }
