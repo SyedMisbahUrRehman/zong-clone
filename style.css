@@ -58,6 +58,7 @@
     background-color: var(--bs-gray-200);
 }
 
+
 .nav ul {
     display: flex;
     gap: 20px;
@@ -77,7 +78,10 @@
     color: var(--bs-pink);
     text-decoration-color: var(--bs-primary);
 }
-
+.mobile_links{
+    display: none;
+  
+}
 /* Home Hero Slider */
 .home_hero_slider {
     height: 450px;
@@ -104,7 +108,18 @@
 
 @media (max-width: 992px) {
 
-    .nav {
+    .nav ul{
         display: none;
+    }
+    .mobile_links img{
+        height: 100%;
+        width: 100%;
+    }
+    .mobile_links{
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        height: 25px;
     }
 }
