@@ -58,7 +58,8 @@
     vertical-align: middle;
     cursor: pointer;
     user-select: none;
-    
+    font-size: 17px;
+    text-wrap: nowrap;
 
 }
 
@@ -103,12 +104,21 @@
     height: 100%;
     width: 100%;
 }
+
+.logo img{
+    width: 75px;
+    margin-bottom: 10px;
+}
+
 /* Home Hero Slider */
 .home_hero_slider {
     height: 450px;
     width: 100%;
     background-color: var(--bs-gray);
 
+}
+.home_hero_slider img{
+    max-width: 100%;
 }
 /* Services Section */
 
@@ -121,10 +131,86 @@
 /* Bundles Section*/
 
 .bundles_section {
-    height: 400px;
+    height: 380px;
     width: 100%;
-    background-color: var(--bs-gray-500);
+    display: flex;
+    gap: 20px;
+    padding: 40px;
+    /* background-color: var(--bs-gray-500); */
 
+}
+
+.bundle-content{
+    width: 450px;
+}
+
+.bundle-content button{
+    margin-top: 20px;
+
+}
+
+.bundles_section h2{
+    color: var(--bs-primary);
+    text-transform: capitalize;
+    font-size: 45px;
+}
+.bundles_section p{
+    color: var(--bs-gray);
+}
+.card{
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px var(--bs-gray-500);
+    padding: 15px;
+    width: 400px;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+}
+.card:hover{
+    box-shadow: 1px 1px 10px var(--bs-gray-500);
+}
+.card h5{
+    color: var(--bs-pink);
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+}
+.card h4{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 400;
+}
+.card-icon{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    height: 180px;
+    align-items: center;
+}
+.card-icon h6{
+    color: var(--bs-primary);
+}
+.card-icon p{
+    font-size: 11px;
+    text-transform: capitalize;
+}
+.card-icon img{
+    width: 40px;
+}
+.card-btn{
+    display: flex;
+    justify-content: space-between;
+}
+.card-btn h4{
+    font-size: 20px;
+    color: var(--bs-secondary);
+}
+.card-btn p{
+    font-size: 14px;
+    text-transform: capitalize;
+}
+.card-btn button{
+    padding: 4px 20px;
+    text-transform: uppercase;
 }
 
 @media (max-width: 992px) {
