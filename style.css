@@ -442,6 +442,7 @@
   height: 40px;
   overflow: hidden;
   white-space: nowrap;
+  margin-block: 18px;
 }
 .marquee_section_content {
   display: inline-block;
