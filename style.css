@@ -218,6 +218,7 @@
   cursor: pointer;
   transition: ease-in-out 0.3s;
   margin: 10px;
+  /* min-height: 330px; */
 }
 
 .card:hover {
@@ -231,18 +232,20 @@
   font-weight: 400;
 }
 
-.card h4 {
+.card > h4 {
   text-transform: uppercase;
   font-size: 20px;
   font-weight: 400;
+  min-height: 50px;
 }
 
 .card-icon {
   display: flex;
   justify-content: space-evenly;
   text-align: center;
-  height: 180px;
+  /* height: 180px; */
   align-items: center;
+  min-height: 200px;
 }
 
 .card-icon h6 {
@@ -261,11 +264,14 @@
 .card-btn {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .card-btn h4 {
   font-size: 20px;
   color: var(--bs-secondary);
+  text-transform: uppercase;
+  font-weight: 400;
 }
 
 .card-btn p {
