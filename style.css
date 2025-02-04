@@ -639,7 +639,7 @@
   .internet_package_section {
     max-width: 65%;
   }
-
+}
 @media screen and (min-width:320px) and (max-width:576px) {
     .internet-section-img {
         width: 600px;
@@ -669,6 +669,7 @@
         flex-direction: column;
 
     }
+  }
 @media screen and (min-width: 993px) and (max-width: 1300px) {
   .internet_package_section {
     max-width: 100%;
