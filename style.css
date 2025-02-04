@@ -309,6 +309,84 @@
 .sec-footer p a:hover {
   color: var(--bs-secondary);
 }
+/* Broadband Section*/
+.broadband_section {
+    height: 400px;
+    width: 100%;
+    background-color: var(--bs-gray-200);
+    margin-top: 50px;
+    display: flex;
+    padding-block: 50px;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  
+  .broadband-img{
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+  
+  }
+  .broadband_section_content{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 400px;
+      justify-content: space-between;
+      align-items: flex-start;
+  }
+  
+  .broadband_section h1 {
+    color: var(--bs-primary);
+    font-size: 45px;
+    font-weight: bold;
+    
+  }
+  .broadband_section p {
+    font-size: 20px;
+    font-weight: 400;
+    
+    
+  }
+  .broadband_section button {
+    font-size: 17px;
+    font-weight: 400;
+    /* border-radius: 60px; */
+  }
+  /*Internet Package Section*/
+  .internet_package_section {
+    height: 480px;
+    width: 100%;
+    background-color: var(--bs-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  
+  .internet_package_section h1 {
+    font-size: 45px;
+    font-weight: bold;
+    color: var(--bs-primary);
+  }
+  .internet_package_section p {
+    font-size: 16px;
+    font-weight: 400;
+    padding-block: 25px;
+    width: 400px;
+  }
+  .internet-section-img{
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+  }
+  
+
+
+
 .marquee_section {
   background-color: var(--bs-black);
   width: 100%;
