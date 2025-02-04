@@ -96,14 +96,13 @@
     color: var(--bs-secondary);
     text-decoration-color: var(--bs-primary);
 }
-
-.mobile_links  {
+.mobile_links {
   display: none;
 }
 
-.mobile_links img {
-    height: 100%;
-    width: 100%;
+.mobile_links img  {
+  height: 100%;
+  width: 100%;
 }
 
 .logo img {
@@ -155,7 +154,6 @@
 .services_section {
     height: 200px;
     max-width: 100%;
-    background-color: var(--bs-gray-300);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -189,9 +187,9 @@
     padding: 40px;
 }
 
-.slider-1 {
-    width: 950px;
-    overflow: hidden;
+.slider-1  {
+  width: 950px;
+  overflow: hidden;
 }
 
 .bundle-content {
@@ -220,6 +218,7 @@
   cursor: pointer;
   transition: ease-in-out 0.3s;
   margin: 10px;
+  /* min-height: 330px; */
 }
 
 .card:hover {
@@ -233,18 +232,20 @@
   font-weight: 400;
 }
 
-.card h4 {
+.card > h4 {
   text-transform: uppercase;
   font-size: 20px;
   font-weight: 400;
+  min-height: 50px;
 }
 
 .card-icon {
   display: flex;
   justify-content: space-evenly;
   text-align: center;
-  height: 180px;
+  /* height: 180px; */
   align-items: center;
+  min-height: 200px;
 }
 
 .card-icon h6 {
@@ -263,11 +264,14 @@
 .card-btn {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .card-btn h4 {
   font-size: 20px;
   color: var(--bs-secondary);
+  text-transform: uppercase;
+  font-weight: 400;
 }
 
 .card-btn p {
@@ -293,38 +297,43 @@
   transition: ease-in-out 0.5s;
 }
 
-.arrows i:hover {
-    color: var(--bs-secondary);
+.arrows i:hover  {
+  color: var(--bs-secondary);
 }
 
-#bottom-arrow {
-    display: none;
+#bottom-arrow  {
+  display: none;
 }
 
 /* footer */
-.sec-footer {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+.sec-footer  {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 30px;
 }
 
-.sec-footer h2 {
+
+.sec-footer h2  {
     color: var(--bs-gray);
     text-transform: uppercase;
 }
 
-.sec-footer .social-icons {
+
+.sec-footer .social-icons  {
     display: flex;
     gap: 20px;
     padding-top: 20px;
 }
 
-.sec-footer .social-icons img {
+
+.sec-footer .social-icons img  {
     width: 40px;
     cursor: pointer;
 }
 
-.social-links {
+
+.social-links  {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
@@ -333,21 +342,24 @@
     padding-block: 20px;
 }
 
-.social-links a {
+
+.social-links a  {
     font-size: 12px;
     color: var(--bs-gray);
     text-transform: uppercase;
     cursor: pointer;
 }
 
-.sec-footer p {
+
+.sec-footer p  {
     font-size: 12px;
     color: var(--bs-gray);
     text-align: center;
     padding-block: 20px;
 }
 
-.sec-footer p a {
+
+.sec-footer p a  {
     font-size: 12px;
     color: var(--bs-gray);
     text-transform: uppercase;
@@ -355,7 +367,8 @@
     transition: ease-in-out 0.3s;
 }
 
-.sec-footer p a:hover {
+
+.sec-footer p a:hover  {
     color: var(--bs-secondary);
 }
 /* Broadband Section*/
@@ -544,6 +557,11 @@
     padding: 8px;
   }
 }
+@media screen and (min-width: 320px) and (max-width: 576px) {
+  .card {
+    width: 300px;
+  }
+}
 
 @media screen and (min-width:320px) and (max-width:576px) {
     .card {
@@ -581,7 +599,8 @@
     max-width: 100%;
     flex-direction: column;
   }
-  .broadband-img {
+
+  .broadband-img  {
     width: 300px;
   }
 }
@@ -595,18 +614,38 @@
     width: 300px;
     /* flex-wrap: wrap; */
   }
+    .broadband_section {
+        max-width: 100%;
+        flex-direction: column;
+
+    }
+
+    .broadband-img {
+        width: 300px;
+        /* flex-wrap: wrap; */
+
+    }
+
 }
 
 @media screen and (min-width: 769px) and (max-width: 992px) {
   .broadband_section {
     max-width: 100%;
   }
+    .broadband_section {
+        max-width: 100%;
+
+    }
 }
 
 @media screen and (max-width: 993px) {
   .broadband_section {
     max-width: 100%;
   }
+    .broadband_section {
+        max-width: 100%;
+
+    }
 }
 @media screen and (min-width: 320px) and (max-width: 576px) {
   .internet-section-img {
@@ -616,15 +655,36 @@
     max-width: 65%;
   }
 }
+@media screen and (min-width:320px) and (max-width:576px) {
+    .internet-section-img {
+        width: 600px;
+
+
+    }
+
+    .internet_package_section {
+        max-width: 65%;
+    }
+}
+
 @media screen and (min-width: 578px) and (max-width: 992px) {
-  .internet_package_section {
+  .internet_package_section  {
     max-width: 100%;
     flex-direction: column;
   }
-  .internet-section-img {
+
+  .internet-section-img  {
     width: 600px;
   }
 }
+
+@media screen and (min-width:993px) and (max-width: 1300px) {
+    .internet_package_section {
+        max-width: 100%;
+        flex-direction: column;
+
+    }
+  }
 @media screen and (min-width: 993px) and (max-width: 1300px) {
   .internet_package_section {
     max-width: 100%;
