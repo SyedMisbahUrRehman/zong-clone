@@ -154,7 +154,6 @@
 .services_section {
     height: 200px;
     max-width: 100%;
-    background-color: var(--bs-gray-300);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -305,6 +304,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  padding-top: 30px;
 }
 
 .sec-footer h2  {
