@@ -374,7 +374,7 @@
         width: 300px;
     }
  }
-}
+
 @media screen and (max-width: 576px) {
   .services_section {
     width: 100%;
