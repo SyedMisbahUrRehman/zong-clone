@@ -46,17 +46,19 @@
 }
 
 /* Reusable btn */
-.btn {
-  display: inline-block;
-  background-color: var(--bs-secondary);
-  color: var(--bs-white);
-  border-radius: 26px;
-  padding: 6px 40px;
-  line-height: 1.5;
-  text-align: center;
-  vertical-align: middle;
-  cursor: pointer;
-  user-select: none;
+.btn{
+    display: inline-block;
+    background-color: var(--bs-secondary);
+    color: var(--bs-white);
+    border-radius: 26px;
+    padding: 6px 40px;
+    line-height: 1.5;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    
+
 }
 
 /* Header */
@@ -92,19 +94,27 @@
   color: var(--bs-secondary);
   text-decoration-color: var(--bs-primary);
 }
-.mobile_links {
-  display: none;
+.mobile_links{
+    display: none;
 }
-.mobile_links img {
-  height: 100%;
-  width: 100%;
+.mobile_links img{
+    height: 100%;
+    width: 100%;
 }
+
+.logo img {
+    width: 75px;
+    margin-bottom: 10px;
+}
+
 /* Home Hero Slider */
 .home_hero_slider {
-  height: 450px;
-  width: 100%;
-  background-color: var(--bs-gray);
+    height: 450px;
+    width: 100%;
+    background-color: var(--bs-gray);
+
 }
+
 /* Services Section */
 
 .services_section {
@@ -136,95 +146,25 @@
 /* Bundles Section*/
 
 .bundles_section {
-  height: 400px;
-  width: 100%;
-  background-color: var(--bs-gray-500);
-}
-.broadband_section {
-  height: 400px;
-  width: 100%;
-  background-color: var(--bs-gray-200);
-  margin-top: 50px;
-  display: flex;
-  padding-block: 50px;
-  align-items: center;
-  justify-content: center;
-
-}
-
-.broadband-img{
+    height: 400px;
     width: 100%;
-    height: 100%;
-    object-fit: contain;
+    background-color: var(--bs-gray-500);
 
-}
-.broadband_section_content{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 400px;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
-.broadband_section h1 {
-  color: var(--bs-primary);
-  font-size: 45px;
-  font-weight: bold;
-  
-}
-.broadband_section p {
-  font-size: 20px;
-  font-weight: 400;
-  
-  
-}
-.broadband_section button {
-  font-size: 17px;
-  font-weight: 400;
-  /* border-radius: 60px; */
-}
-.internet_package_section {
-  height: 480px;
-  width: 100%;
-  background-color: var(--bs-white);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 20px;
-}
-
-
-.internet_package_section h1 {
-  font-size: 45px;
-  font-weight: bold;
-  color: var(--bs-primary);
-}
-.internet_package_section p {
-  font-size: 16px;
-  font-weight: 400;
-  padding-block: 25px;
-  width: 400px;
-}
-.internet-section-img{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
 }
 
 @media (max-width: 992px) {
-  .nav ul {
-    display: none;
-  }
 
-  .mobile_links {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-    height: 25px;
-  }
+    .nav ul{
+        display: none;
+    }
+
+    .mobile_links{
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        height: 25px;
+    }
 }
 @media screen and (max-width: 576px) {
   .services_section {
